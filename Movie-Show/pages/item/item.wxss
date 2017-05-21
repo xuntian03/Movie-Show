@@ -1,0 +1,31 @@
+.header {
+  padding:20rpx;
+  font-size:34rpx;
+}
+
+.title {
+  text-align:center;
+  padding:10rpx;
+  font-size:40rpx;
+  font-weight:blod;
+  color:black;
+}
+
+.aver text {
+  color:red;
+  font-weight:blod;
+}
+
+.img {
+  width:710rpx;
+  margin-left:20rpx;
+}
+image {
+  width:710rpx;
+  height:500rpx;
+}
+
+.summ {
+  font-size:36rpx;
+  padding:20rpx;
+}

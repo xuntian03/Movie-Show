@@ -1,0 +1,40 @@
+.slide swiper {
+  height:400rpx;
+  margin-bottom:30rpx;
+}
+.slide-image{
+  width:100%;
+  height:100%;
+}
+
+.title {
+  font-size:50rpx;
+  color:red;
+  font-weight:blod;
+  margin-left:30rpx;
+}
+
+.board {
+  display:flex;
+  flex-direction:column;
+  padding:30rpx;
+}
+
+.board-item {
+  display:flex;
+  flex:1;
+  cursor:pointer;
+  border:1rpx solid #eee;
+  margin-top:20rpx;
+  padding:30rpx;
+  background:#eee;
+}
+
+.board-item text {
+  flex:1;
+}
+
+.board-item image {
+  width:30rpx;
+  height:30rpx;
+}

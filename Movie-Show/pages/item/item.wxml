@@ -1,0 +1,32 @@
+<!-- 电影详情的结构 -->
+
+<view class="container">
+  <view class="header">
+    <view class="title">
+	<view>{{title}}</view>
+	<view>{{ori_title}}</view>
+    </view>
+    <view class="year">
+	<text>年份：{{year}}年({{countries}})</text>
+    </view>
+    <view class="aver">
+	<text>评分：{{average}}</text>
+    </view>
+    <view class="dire">
+	<text>导演：{{directors}}</text>
+    </view>
+    <view class="actor">
+	<text>演员：<block wx:for="{{casts}}" wx:key="dirList">{{item.name}}
+	</block></text>
+    </view>
+  </view>
+  
+  <view class="img">
+    <image src="{{image}}" mode="aspectFill" />
+  </view>
+
+  <view class="summ">
+    <text>{{summary}}</text>
+  </view>
+      
+</view>

@@ -1,0 +1,32 @@
+<!-- 电影榜单的结构 -->
+
+<view class="container">
+  <!-- 加载的提示信息 -->
+  <loading hidden="{{!loading}}">
+    加载中...
+  </loading>
+  <!-- 电影榜单名称 -->
+  <view class="header">
+    <text>{{title}}</text>
+  </view>
+  <!-- 榜单详细内容 -->
+  <view class="list">
+    <navigator wx:for="{{list}}" wx:key="movList" url="../item/item?id={{item.id}}">
+      <view class="list-item">
+        <!-- 电影海报 -->
+        <image src="{{item.images.large}}" />
+	<!-- 电影信息 -->
+        <view class="info">
+	  <text class="title">{{item.title}}</text>
+	  <text>{{item.original_title}}({{item.year}})</text>
+	  <text>导演：<block wx:for="{{item.directors}}" wx:key="dirList">{{item.name}}</block></text>
+	</view>
+	<!-- 电影评分 -->
+	<view class="rating">
+	  <text>{{item.rating.average}}</text>
+	</view>
+      </view>
+    </navigator>
+
+  </view>
+</view>
